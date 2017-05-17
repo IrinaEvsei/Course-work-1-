@@ -22,16 +22,13 @@ public class ImagePanel extends Component {
             image = ImageIO.read(img);
             copyImage = image;
         } catch (Exception ex) {
-            MessageDialogUtils.showErrorMessage(ImageMakerMainFrameHandler.getInstance().getRootPane(), "Произошла ошибка при открытии файла");
+            MessageDialogUtils.showErrorMessage(ImageMakerMainFrameHandler.getInstance().getRootPane(), "ERROR! Cannot open the file.");
         }
-
     }
 
     public static BufferedImage getImage() {
         return image;
     }
-
-
 
     public static void setImage(BufferedImage img) {
         ImagePanel.image = img;
@@ -48,7 +45,6 @@ public class ImagePanel extends Component {
     public static void resetImage(){
         image = copyImage;
     }
-
 
 }
 

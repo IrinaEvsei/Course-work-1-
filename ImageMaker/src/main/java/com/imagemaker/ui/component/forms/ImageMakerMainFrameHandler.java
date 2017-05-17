@@ -1,6 +1,5 @@
 package com.imagemaker.ui.component.forms;
 
-
 public class ImageMakerMainFrameHandler {
 
     private static ImageMakerMainFrame instance;

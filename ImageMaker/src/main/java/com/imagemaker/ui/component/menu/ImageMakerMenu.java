@@ -12,10 +12,7 @@ import com.imagemaker.ui.listener.picture.reset.ResetActionListener;
 import com.imagemaker.ui.listener.picture.rotate.RotateActionListener;
 import com.imagemaker.ui.listener.picture.sharpening.SharpeningActionListener;
 
-import javax.swing.ImageIcon;
-import javax.swing.JMenu;
-import javax.swing.JMenuBar;
-import javax.swing.JMenuItem;
+import javax.swing.*;
 
 public class ImageMakerMenu extends JMenuBar {
 
@@ -101,12 +98,13 @@ public class ImageMakerMenu extends JMenuBar {
         JMenu view = new JMenu("View");
 
         JMenuItem zoomIn = new JMenuItem("Zoom In");
+        //zoomIn.addActionListener(new ZoomInActionListener();
+
         JMenuItem zoomOut = new JMenuItem("Zoom Out");
-        JMenuItem fullScreen = new JMenuItem("Full Screen");
+        //zoomOut.addActionListener(new ZoomOutActionListener();
 
         view.add(zoomIn);
         view.add(zoomOut);
-        view.add(fullScreen);
 
         return view;
     }

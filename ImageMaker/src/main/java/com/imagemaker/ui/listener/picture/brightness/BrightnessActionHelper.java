@@ -1,14 +1,13 @@
 package com.imagemaker.ui.listener.picture.brightness;
 
-
 import java.awt.Color;
 import java.awt.image.BufferedImage;
 
 public class BrightnessActionHelper {
 
     public static void changeBrightness(int increasingFactor, BufferedImage img) {
-        //size of input image
 
+        //size of input image
         int w = img.getWidth();
         int h = img.getHeight();
         //Pixel by pixel navigation loop
@@ -43,8 +42,6 @@ public class BrightnessActionHelper {
                 //set output image pixel component
                 img.setRGB(i, j, new Color(r, g, b).getRGB());
             }
-
         }
-
     }
 }

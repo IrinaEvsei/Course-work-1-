@@ -7,7 +7,6 @@ import com.imagemaker.ui.utils.MessageDialogUtils;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-
 public class GrayActionListener implements ActionListener {
 
     @Override
@@ -15,7 +14,7 @@ public class GrayActionListener implements ActionListener {
         try {
             GrayActionHelper.createGrayImage(ImagePanel.getImage());
         } catch (Exception ex) {
-            MessageDialogUtils.showErrorMessage(ImageMakerMainFrameHandler.getInstance().getRootPane(), "Произошла ошибка");
+            MessageDialogUtils.showErrorMessage(ImageMakerMainFrameHandler.getInstance().getRootPane(), "ERROR! This action cannot be performed.");
             ImagePanel.resetImage();
         }
     }

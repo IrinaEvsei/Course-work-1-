@@ -1,6 +1,5 @@
 package com.imagemaker.ui.utils;
 
-
 public class BuildInformation {
 
     public static final String VERSION_NUMBER = "0.1";

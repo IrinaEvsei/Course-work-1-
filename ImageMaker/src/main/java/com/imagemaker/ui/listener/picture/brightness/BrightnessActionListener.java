@@ -8,7 +8,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JSlider;
 
-
 public class BrightnessActionListener implements ActionListener {
 
     @Override
@@ -24,10 +23,8 @@ public class BrightnessActionListener implements ActionListener {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
 
                 BrightnessActionHelper.changeBrightness((slider.getValue()) / 10, ImagePanel.getImage());
-
             }
         });
-
     }
 }
 

@@ -6,7 +6,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 
-
 public class BlurActionListener implements ActionListener {
 
     @Override
@@ -15,5 +14,3 @@ public class BlurActionListener implements ActionListener {
         ImagePanel.setImage(image);
     }
 }
-
-

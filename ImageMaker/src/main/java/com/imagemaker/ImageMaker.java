@@ -5,7 +5,7 @@ import com.imagemaker.ui.component.forms.ImageMakerMainFrameHandler;
 
 public class ImageMaker {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         ImageMakerMainFrame frame = ImageMakerMainFrameHandler.getInstance();
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);

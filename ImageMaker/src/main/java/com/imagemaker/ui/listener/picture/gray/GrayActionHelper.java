@@ -8,7 +8,6 @@ public class GrayActionHelper {
 
     public static void createGrayImage(BufferedImage image)throws IOException
     {
-
         int w=0,h=0,width,height;
         width=image.getWidth();
         height=image.getHeight();
@@ -29,6 +28,5 @@ public class GrayActionHelper {
                 image.setRGB(w, h, lum.getRGB());
             }
         }
-
     }
 }

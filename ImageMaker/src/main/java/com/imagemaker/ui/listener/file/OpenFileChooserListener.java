@@ -1,6 +1,5 @@
 package com.imagemaker.ui.listener.file;
 
-
 import com.imagemaker.ui.component.file.FileChooser;
 import com.imagemaker.ui.component.forms.ImageMakerMainFrameHandler;
 import com.imagemaker.ui.utils.MessageDialogUtils;
@@ -25,9 +24,7 @@ public class OpenFileChooserListener implements ActionListener {
                 ImageMakerMainFrameHandler.getInstance().openImage(file);
             }
         } catch (Exception ex) {
-            MessageDialogUtils.showErrorMessage(ImageMakerMainFrameHandler.getInstance().getRootPane(), "Произошла ошибка при открытии файла");
+            MessageDialogUtils.showErrorMessage(ImageMakerMainFrameHandler.getInstance().getRootPane(), "ERROR! Cannot open the file.");
         }
-        }
-
-
+    }
 }

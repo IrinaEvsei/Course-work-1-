@@ -1,7 +1,5 @@
 package com.imagemaker.ui.component.file;
 
-
-
 import com.imagemaker.ui.listener.file.OpenFileChooserListener;
 import com.imagemaker.ui.listener.file.SaveFileChooserListener;
 
@@ -26,6 +24,5 @@ public class FileChooser extends JFileChooser {
         }else {
             addActionListener(new SaveFileChooserListener());
         }
-
     }
 }
